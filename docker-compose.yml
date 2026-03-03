@@ -1,0 +1,15 @@
+# Local OpenClaw + Supabase (Architecture: Development Workflow)
+# Run: docker-compose up
+# Supabase local: npx supabase start (uses Supabase CLI; run from repo root)
+
+services:
+  openclaw-gateway:
+    image: openclaw/gateway:latest
+    ports:
+      - "18789:18789"
+    # Optional: mount apps/openclaw config when Gateway supports volume config
+    # volumes:
+    #   - ./apps/openclaw/config:/etc/openclaw
+
+  # Supabase local (Postgres, Auth, Studio) is started separately:
+  # npx supabase init && npx supabase start

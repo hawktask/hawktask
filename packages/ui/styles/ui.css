@@ -1,0 +1,55 @@
+/**
+ * Hawktask component classes — use with @apply from design tokens.
+ * Import after theme.css in the app.
+ */
+
+@layer components {
+  /* Bento grid card — flat, clean section container */
+  .card-bento {
+    @apply rounded-2xl border border-neutral-200/80 bg-card p-6 transition-shadow duration-200;
+  }
+
+  /* Claymorphism — primary interactive blocks */
+  .card-clay {
+    @apply rounded-3xl bg-card p-6 transition-all duration-200;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .card-clay:hover {
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.14);
+  }
+
+  /* Glass — overlays and secondary panels */
+  .card-glass {
+    @apply rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 font-medium text-white transition-colors duration-200 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  /* Secondary / outline button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-transparent px-5 py-2.5 font-medium text-neutral-700 transition-colors duration-200 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2;
+  }
+
+  /* Soft chip / tag */
+  .chip-soft {
+    @apply inline-flex items-center rounded-full bg-primary-soft px-3 py-1 text-sm font-medium text-primary;
+  }
+
+  .chip-neutral {
+    @apply inline-flex items-center rounded-full bg-neutral-100 px-3 py-1 text-sm font-medium text-neutral-700;
+  }
+
+  /* Neumorphic-style control (inset shadow) */
+  .control-soft-inset {
+    @apply rounded-xl bg-neutral-100 transition-shadow duration-200;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .control-soft-inset:focus-within {
+    @apply ring-2 ring-primary/30 ring-offset-2;
+  }
+}

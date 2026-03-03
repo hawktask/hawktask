@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+.yarn/
+.yarnrc.yml
+
+# Build and output
+dist/
+build/
+out/
+.next/
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+!.env.example
+
+# Logs and debug
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Cache and temp
+.cache/
+.temp/
+.tmp/
+*.tmp
+
+# Optional and local
+external/
+.agent/
+.agents/
+.claude/
+.cursor/
+.kiro/
+skills-lock.json
+
+# Docker
+.docker/
+
+# Misc
+*.local
+skills-lock.json

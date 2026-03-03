@@ -1,0 +1,24 @@
+{
+  "name": "@hawktask/animations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "animejs": "^3.2.2"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.13",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

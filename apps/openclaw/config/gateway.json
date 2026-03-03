@@ -1,0 +1,10 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.hawktask/workspace/${userId}"
+    }
+  },
+  "billing": {
+    "tier": "${stripeCustomerTier}"
+  }
+}

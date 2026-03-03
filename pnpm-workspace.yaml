@@ -1,0 +1,6 @@
+# Monorepo workspace (Architecture: Development Workflow)
+# See external/Architecture.md
+
+packages:
+  - "apps/*"
+  - "packages/*"

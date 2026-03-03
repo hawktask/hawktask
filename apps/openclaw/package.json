@@ -1,0 +1,7 @@
+{
+  "name": "@hawktask/openclaw",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw config and skills for Hawktask",
+  "type": "module"
+}
