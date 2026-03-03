@@ -71,3 +71,5 @@ skills-lock.json
 # Misc
 *.local
 skills-lock.json
+
+.vercel
